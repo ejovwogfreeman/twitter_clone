@@ -74,7 +74,7 @@ ul {
 
 .fixed-aside ul li a span {
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 #user {
@@ -298,7 +298,18 @@ section .main-aside {
 
 .grid-container .text {
   position: absolute;
-  top: 42%;
+  top: 43%;
   width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container .text .flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid-container .text .flex:last-of-type {
+  margin-left: 10px;
 }
