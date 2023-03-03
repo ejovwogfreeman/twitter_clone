@@ -1,0 +1,304 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.1s ease-in-out;
+}
+
+#logo:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.profile-pic {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.fixed-aside {
+  position: fixed;
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 20px 50px;
+}
+
+.fixed-aside ul li:last-of-type a {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.fixed-aside ul li:last-of-type a:hover {
+  background-color: #248cf5;
+}
+
+.fixed-aside ul li a {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50px;
+  color: black;
+  transition: 0.1s ease-in-out;
+}
+
+.fixed-aside ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fixed-aside ul li a span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#user {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50px;
+  padding: 10px;
+  width: 80%;
+  transition: 0.1s ease-in-out;
+}
+#user:hover {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+#user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+
+#user .text {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#user .text span {
+  font-size: 14px;
+  margin-right: 5px;
+  color: black;
+}
+
+#user .text span::first-line {
+  font-weight: bold;
+}
+
+/* styling the section */
+section {
+  margin-left: 300px;
+}
+
+section nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  z-index: 1;
+}
+section nav #left {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+section nav #left:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+section nav .text {
+  margin-left: 30px;
+}
+
+section nav .text span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section nav form {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: 370px;
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+section nav form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+section .main-aside {
+  display: flex;
+  padding-top: 60px;
+}
+
+/* styling the header */
+
+.cover-pic {
+  position: relative;
+  cursor: pointer;
+}
+
+.cover-pic span {
+  position: absolute;
+  left: 43%;
+  top: 43%;
+  color: white;
+  opacity: 0;
+}
+
+.cover-pic div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-pic img {
+  display: block;
+}
+
+.cover-pic:hover span {
+  opacity: 1;
+}
+
+.cover-pic:hover div {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: relative;
+  background-color: green;
+  margin-bottom: 300px;
+}
+
+.profile {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.profile .move {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile span {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+}
+
+.profile .move:hover span {
+  opacity: 1;
+}
+
+.profile .move .bg {
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  border-radius: 50%;
+}
+
+.profile .move:hover .bg {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header .texts {
+  position: absolute;
+  top: 280px;
+  left: 20px;
+}
+
+.header .texts .edit {
+  position: absolute;
+  top: -70px;
+  right: -110px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.header .texts .edit:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* styling the grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.grid-container a {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.grid-container img {
+  width: 100%;
+  display: block;
+}
+
+.grid-container .text {
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  text-align: center;
+}
