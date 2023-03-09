@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+      integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      .none {
+        display: none;
+      }
+    </style>
+    <title>Tailwind Class</title>
+  </head>
+  <body class="bg-gradient-to-r from-teal-200 to-amber-200">
+    <!-- navbar -->
+    <nav class="bg-amber-400 flex items-center h-16">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="font-bold text-3xl">FreeLance.com</h1>
+        <ul
+          id="links"
+          class="absolute top-16 text-center w-full bg-gradient-to-b from-amber-400 to-amber-500 sm:static sm:w-fit sm:flex sm:justify-right sm:bg-none"
+        >
+          <li class="p-3"><a href="">Home</a></li>
+          <li class="p-3"><a href="">About</a></li>
+          <li class="p-3"><a href="">Services</a></li>
+          <li class="p-3"><a href="">Contact</a></li>
+        </ul>
+        <svg
+          id="btn"
+          class="cursor-pointer sm:hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-black text-white py-20">
+      <div class="container mx-auto flex items-center">
+        <div class="text-center sm:text-left flex-1">
+          <h1 class="font-bold text-4xl sm:text-5xl">
+            Better Solutions For Your Business
+          </h1>
+          <p class="text-xl py-5">
+            We are team of talented developers and we are here to help keep
+            track of your spendings
+          </p>
+          <button
+            class="bg-amber-400 rounded px-5 py-2 text-black hover:bg-amber-500"
+          >
+            Get Started
+          </button>
+        </div>
+        <div class="hidden sm:block flex-1">
+          <img src="hero-img.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </header>
+    <div class="container mx-auto p-5 my-5 bg-white rounded text-justify">
+      <h1 class="font-bold text-3xl text-center mb-3">Know More About Us</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque ipsa.
+      Qui voluptatum quis sed. Officiis odio dignissimos asperiores sit ipsa
+      voluptas minima fuga blanditiis! Vel iusto alias quae obcaecati. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Accusantium distinctio
+      dolorum hic odit, id rem deleniti sequi excepturi at magni quas cum
+      obcaecati. Possimus rerum itaque voluptatibus labore, voluptatem voluptas
+      impedit culpa eius consequuntur eligendi fuga velit cupiditate incidunt
+      error ipsa, labore tempora quos deserunt autem reprehenderit iusto
+      consequatur hic inventore cum. Soluta quae nostrum optio cum, in animi
+      libero voluptatibus dolores molestias inventore aliquid possimus commodi
+      fugiat repellendus reprehenderit, ab veniam ipsam dolorem ex sint ipsa
+      eaque. Sed quaerat porro ad at neque consectetur sunt ipsa, autem placeat
+      vero iusto a ut facilis itaque illo, atque possimus. Dolorum impedit
+      perspiciatis rem? Distinctio facilis veniam voluptatibus, incidunt odit
+      soluta laboriosam eaque deleniti rerum ab excepturi nam harum sed est unde
+      doloremque dolorem reprehenderit enim, repellat explicabo! Incidunt saepe
+      doloremque animi vero cupiditate distinctio iste tempore nihil corrupti
+    </div>
+    <div class="container mx-auto p-5 my-5 bg-white rounded text-justify">
+      <h1 class="font-bold text-3xl text-center mb-3">Testimonials</h1>
+      <div class="sm:flex text-center">
+        <div class="p-1">
+          <div class="rounded border p-5">
+            <img src="gbprofile.png" alt="" width="100px" class="m-auto" />
+            <h1 class="font-bold text-xl mt-3">Mark Powells</h1>
+            <p class="my-3">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="bg-teal-500 text-white rounded px-5 py-2">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="p-1">
+          <div class="rounded border p-5">
+            <img src="gbprofile.png" alt="" width="100px" class="m-auto" />
+            <h1 class="font-bold text-xl mt-3">Mark Powells</h1>
+            <p class="my-3">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="bg-teal-500 text-white rounded px-5 py-2">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="p-1">
+          <div class="rounded border p-5">
+            <img src="gbprofile.png" alt="" width="100px" class="m-auto" />
+            <h1 class="font-bold text-xl mt-3">Mark Powells</h1>
+            <p class="my-3">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button class="bg-teal-500 text-white rounded px-5 py-2">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto p-5 my-5 bg-white rounded text-justify">
+      <div class="gmap_canvas">
+        <iframe
+          width="100%"
+          height="500"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      document.getElementById("links").classList.toggle("none");
+    });
+  </script>
+</html>
