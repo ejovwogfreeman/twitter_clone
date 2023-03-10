@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Pictures/image"
+		},
+		{
+			"path": "../twitter_clone"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "assignment"
+	}
+}
