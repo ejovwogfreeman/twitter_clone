@@ -531,8 +531,14 @@ section .main-aside aside {
   border-radius: 50px;
 }
 
+.down-section a:first-child {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
 .auth-pages {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -546,7 +552,119 @@ section .main-aside aside {
 
 .auth-pages form {
   background-color: white;
-  width: 400px;
-  padding: 10px;
+  width: 500px;
+  padding: 20px;
   border-radius: 10px;
+  position: relative;
+}
+
+.auth-pages form img {
+  margin-bottom: 10px;
+  margin: auto;
+  display: block;
+}
+
+.auth-pages form h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.auth-pages form a {
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.auth-pages form a:first-of-type {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  height: 40px;
+  padding: 0px 5px;
+}
+
+.auth-pages form a:first-of-type span small::first-line {
+  font-weight: bold;
+}
+
+.auth-pages form a:first-of-type {
+  font-size: 12px;
+}
+
+.auth-pages form span {
+  display: block;
+}
+
+.auth-pages form input {
+  display: block;
+}
+
+#dont {
+  text-align: center;
+  display: block;
+}
+#dont a {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+}
+
+.auth-pages hr {
+  width: 70%;
+  margin: auto;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.auth-pages input {
+  margin: auto;
+  width: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: none;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.or {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.orr {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 63%;
+  left: 45%;
+}
+
+#cross {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+  position: absolute;
+  top: 20px;
 }
